@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal compatible con AppCompatActivity -->
+    <style name="Theme.UdeaFood" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Colores personalizados -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+
+    </style>
+</resources>

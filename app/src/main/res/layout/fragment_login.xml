@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF3DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_udea_logo"
+            android:contentDescription="Logo UdeA Food"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título -->
+        <TextView
+            android:text="¡Hola!,"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="inicia sesión para continuar"
+            android:textSize="16sp"
+            android:textColor="#2B2B2B"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O crea una cuenta nueva"
+            android:textColor="#009688"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPassword" />
+
+        <!-- Botón entrar -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:text="Recordar Contraseña"
+            android:textSize="14sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <TextView
+            android:text="O inicia sesión con"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:layout_marginVertical="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Facebook -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:backgroundTint="#A6E3E9"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Google -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:drawableLeft="@drawable/ic_google"
+            android:backgroundTint="#A6E3E9"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</ScrollView>
+

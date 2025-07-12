@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF3DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_udea_logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu cuenta"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp"
+            android:inputType="textPassword" />
+
+        <!-- Confirmar contraseña -->
+        <EditText
+            android:id="@+id/input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
+            android:backgroundTint="#A6E3E9"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp"
+            android:inputType="textPassword" />
+
+        <!-- Botón registrarse -->
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Volver a login -->
+        <TextView
+            android:id="@+id/tv_go_to_login"
+            android:text="¿Ya tienes cuenta? Inicia sesión"
+            android:textColor="#009688"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

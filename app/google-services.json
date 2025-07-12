@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085293597678",
+    "project_id": "foodudea-38cc8",
+    "storage_bucket": "foodudea-38cc8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085293597678:android:8fb7bba0ec6c613e3bb4ff",
+        "android_client_info": {
+          "package_name": "co.edu.udea.compumovil.gr07_20251.udeafood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI0ITQmQKxIt_Ryhcll4lQNUgvcMSrOZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

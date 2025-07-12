@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAF3DC"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/img_store_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_udea_logo"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Logo de tienda"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toca la imagen para seleccionar un logo"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/input_store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la tienda"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón para elegir ubicación -->
+        <Button
+            android:id="@+id/btn_pick_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar ubicación en el mapa"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+        <!-- Coordenadas -->
+        <TextView
+            android:id="@+id/text_selected_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Descripción ubicación -->
+        <EditText
+            android:id="@+id/input_location_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción de la ubicación (ej: detrás del bloque 19)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Horario -->
+        <EditText
+            android:id="@+id/input_store_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario (ej: 8:00 a.m. - 5:00 p.m.)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Precio mínimo -->
+        <EditText
+            android:id="@+id/input_min_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio mínimo (ej: 5000)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Correo electrónico -->
+        <EditText
+            android:id="@+id/input_store_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/input_store_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Estado -->
+        <CheckBox
+            android:id="@+id/check_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Tienda abierta?" />
+
+        <!-- Botón guardar -->
+        <Button
+            android:id="@+id/btn_save_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar tienda y continuar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
